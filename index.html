@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta
       name="apple-mobile-web-app-status-bar-style"
       content="black-transcluent"
@@ -33,7 +33,7 @@
 
       <div class="banner-body">
         <main class="banner-content">
-          <h1 class="title">Get Unlimited Access</h1>
+          <h1 class="title" data-i18n="Get Unlimited <br>Access"></h1>
 
           <section class="features">
             <ul class="features-list">
@@ -48,8 +48,10 @@
                   alt=""
                   class="feature-card__image"
                 />
-
-                <p class="feature-card__text">Unlimited Art Creation</p>
+                <p
+                  class="feature-card__text"
+                  data-i18n="Unlimited Art <br>Creation"
+                ></p>
               </li>
 
               <li class="feature-card">
@@ -63,8 +65,10 @@
                   alt=""
                   class="feature-card__image"
                 />
-
-                <p class="feature-card__text">Exclusive <br />Styles</p>
+                <p
+                  class="feature-card__text"
+                  data-i18n="Exclusive <br>Styles"
+                ></p>
               </li>
 
               <li class="feature-card">
@@ -78,10 +82,10 @@
                   alt=""
                   class="feature-card__image"
                 />
-                <p class="feature-card__text">
-                  Magic Avatars<br />
-                  With 20% Off
-                </p>
+                <p
+                  class="feature-card__text"
+                  data-i18n="Magic Avatars <br>With 20% Off"
+                ></p>
               </li>
             </ul>
           </section>
@@ -91,14 +95,25 @@
               <li>
                 <button type="button" class="tariff">
                   <div class="tariff__details">
-                    <h2 class="tariff__title">Yearly Access</h2>
-                    <p class="tariff__desc">Just $39.99 per year</p>
+                    <h2 class="tariff__title" data-i18n="YEARLY ACCESS"></h2>
+                    <p
+                      class="tariff__desc"
+                      data-i18n="Just {{price}} per year"
+                      data-price="pricePerYear"
+                    ></p>
                   </div>
 
-                  <p class="tariff__price">$0.48 <br />per week</p>
+                  <p
+                    class="tariff__price"
+                    data-i18n="{{price}} <br>per week"
+                    data-price="pricePerWeekOptionYear"
+                  ></p>
 
                   <span class="tariff-badge">
-                    <span class="tariff-badge__text">BEST OFFER</span>
+                    <span
+                      class="tariff-badge__text"
+                      data-i18n="BEST OFFER"
+                    ></span>
                     <span class="tariff-badge__left-line"></span>
                     <span class="tariff-badge__right-line">
                       <svg
@@ -137,13 +152,21 @@
 
               <li>
                 <button type="button" class="tariff">
-                  <h2 class="tariff__title">Weekly access</h2>
-                  <p class="tariff__price">$6.99 <br />per week</p>
+                  <h2 class="tariff__title" data-i18n="WEEKLY ACCESS"></h2>
+                  <p
+                    class="tariff__price"
+                    data-i18n="{{price}} <br>per week"
+                    data-price="pricePerWeekOptionWeek"
+                  ></p>
                 </button>
               </li>
             </ul>
 
-            <button type="button" class="tariffs__link">Continue</button>
+            <button
+              type="button"
+              class="tariffs__link"
+              data-i18n="Continue"
+            ></button>
           </section>
         </main>
 
@@ -151,13 +174,13 @@
           <nav>
             <ul class="footer-links">
               <li>
-                <a href="#" class="footer-link">Terms of Use</a>
+                <a href="#" class="footer-link" data-i18n="Terms of Use"></a>
               </li>
               <li>
-                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link" data-i18n="Privacy Policy"></a>
               </li>
               <li>
-                <a href="#" class="footer-link">Restore</a>
+                <a href="#" class="footer-link" data-i18n="Restore"></a>
               </li>
             </ul>
           </nav>
