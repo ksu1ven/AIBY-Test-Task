@@ -1,0 +1,8 @@
+@import "./fonts.css";
+@import "./variables.css";
+@import "./reset.css";
+@import "./base.css";
+@import "./layout.css";
+@import "./components/features.css";
+@import "./components/tariffs.css";
+@import "./components/footer.css";

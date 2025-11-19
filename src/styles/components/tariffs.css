@@ -1,0 +1,199 @@
+.tariffs-list {
+  display: flex;
+  row-gap: 8px;
+  flex-direction: column;
+}
+
+.tariff {
+  display: flex;
+  position: relative;
+  column-gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 56px;
+  padding: 8px 36px 8px 24px;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  backdrop-filter: blur(10.87px);
+  background-color: rgba(var(--color-white-rgb), 0.16);
+  transition:
+    background-color 0.1s ease,
+    border-color 0.1s ease;
+  user-select: none;
+
+  &:active,
+  &.active {
+    border-color: var(--color-white);
+    background-color: rgba(var(--color-white-rgb), 0.3);
+  }
+}
+
+.tariff__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.tariff__desc,
+.tariff__price {
+  font-size: 14px;
+  line-height: 17px;
+  opacity: 70%;
+}
+
+.tariff-badge {
+  display: flex;
+  position: absolute;
+  top: -10px;
+  right: 24px;
+  align-items: center;
+  justify-content: center;
+  width: 119px;
+  height: 20px;
+  padding: 1.1px;
+  border-radius: 16px;
+  transition:
+    background-color 0.1s ease,
+    box-shadow 0.1s ease;
+
+  .active &,
+  .tariff:active & {
+    background-color: var(--color-white);
+    box-shadow: 0px 1px 6px 0px #0000007e;
+  }
+
+  .active &::before,
+  .tariff:active &::before {
+    opacity: 0;
+  }
+}
+
+.tariff-badge::before {
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background-image: linear-gradient(
+    270deg,
+    var(--color-border-gradient-start) 0%,
+    var(--color-border-gradient-middle) 53.01%,
+    var(--color-border-gradient-end) 100%
+  );
+  content: "";
+  transition: opacity 0.1s ease;
+}
+
+.tariff-badge__text {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background-image: linear-gradient(
+    90deg,
+    var(--color-gradient-start) 0%,
+    var(--color-gradient-end) 100%
+  );
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  font-family: var(--font-roboto);
+  text-align: center;
+  transition:
+    background-color 0.1s ease,
+    color 0.1s ease;
+
+  &::before {
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    background-color: var(--color-white);
+    content: "";
+    opacity: 0;
+    transition: opacity 0.1s ease;
+  }
+
+  .tariff:active &,
+  .active & {
+    color: var(--color-black-2);
+  }
+
+  .tariff:active &::before,
+  .active &::before {
+    opacity: 1;
+  }
+}
+
+.tariff-badge__left-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 128px;
+  height: 1px;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    108.44deg,
+    transparent 25%,
+    var(--color-border-left-line) 75.58%
+  );
+  transition: opacity 0.1s ease;
+
+  .active &,
+  .tariff:active & {
+    opacity: 0;
+  }
+}
+
+.tariff-badge__right-line {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateX(100%);
+  transition: opacity 0.1s ease;
+
+  .active &,
+  .tariff:active & {
+    opacity: 0;
+  }
+}
+
+.tariffs__link {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 16px;
+  border-radius: 100px;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  transition: background-color 0.1s ease;
+
+  &:active {
+    background-color: var(--color-white-hover);
+  }
+}
+
+/* iPhone 8 */
+@media screen and (min-width: 375px) and (min-height: 667px) {
+  .tariff {
+    padding: 8px 56px 8px 24px;
+  }
+  .tariff__desc,
+  .tariff__price {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+/* iPhone 12 */
+@media screen and (min-width: 390px) and (min-height: 844px) {
+  .tariffs__link {
+    margin-top: 16px;
+  }
+}

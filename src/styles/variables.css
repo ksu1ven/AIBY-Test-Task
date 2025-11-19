@@ -1,0 +1,17 @@
+:root {
+  --color-white: #ffffff;
+  --color-white-hover: #e6e6e6;
+  --color-white-rgb: 255, 255, 255;
+  --color-black: #070b33;
+  --color-black-2: #141131;
+  --color-shadow-rgb: 4, 3, 26;
+  --color-gradient-start: #bc1fef;
+  --color-gradient-end: #0035ff;
+  --color-border-gradient-start: #00b5ff;
+  --color-border-gradient-middle: #632af7;
+  --color-border-gradient-end: #ff96f4;
+  --color-border-left-line: #fd94f4;
+
+  --font-body: "SF Pro Display", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+}

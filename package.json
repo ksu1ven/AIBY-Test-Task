@@ -1,0 +1,16 @@
+{
+  "name": "aibytesttesk",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "prettier-plugin-css-order": "^2.1.2",
+    "vite": "^7.2.2"
+  }
+}

@@ -1,0 +1,46 @@
+.features {
+  margin: 16px 0 26px;
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4px;
+}
+
+.feature-card {
+  position: relative;
+  border-radius: 16px;
+  line-height: 0;
+}
+
+.feature-card__image {
+  aspect-ratio: 0.7626;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.feature-card__text {
+  position: absolute;
+  right: 8px;
+  bottom: 12px;
+  left: 8px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+/* iPhone 12 */
+@media screen and (min-width: 390px) and (min-height: 844px) {
+  .features {
+    margin: 24px 0 34px;
+  }
+
+  .features-list {
+    column-gap: 6px;
+  }
+
+  .feature-card__image {
+    aspect-ratio: 0.7524;
+  }
+}
