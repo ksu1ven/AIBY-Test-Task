@@ -93,7 +93,11 @@
           <section class="tariffs">
             <ul class="tariffs-list">
               <li>
-                <button type="button" class="tariff">
+                <button
+                  type="button"
+                  class="tariff"
+                  data-href="https://apple.com/"
+                >
                   <div class="tariff__details">
                     <h2 class="tariff__title" data-i18n="YEARLY ACCESS"></h2>
                     <p
@@ -151,7 +155,11 @@
               </li>
 
               <li>
-                <button type="button" class="tariff">
+                <button
+                  type="button"
+                  class="tariff active"
+                  data-href="https://google.com/"
+                >
                   <h2 class="tariff__title" data-i18n="WEEKLY ACCESS"></h2>
                   <p
                     class="tariff__price"
@@ -162,11 +170,13 @@
               </li>
             </ul>
 
-            <button
-              type="button"
+            <a
+              href="https://google.com/"
+              target="_blank"
               class="tariffs__link"
               data-i18n="Continue"
-            ></button>
+              data-link
+            ></a>
           </section>
         </main>
 
