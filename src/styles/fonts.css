@@ -2,6 +2,9 @@
   font-style: normal;
   font-weight: 600;
   src:
+    local("SF Pro Display Semibold"),
+    local("SFProDisplay-Semibold"),
+    local("SF Pro Semibold"),
     url("../assets/fonts/SFProDisplay-Semibold.woff2") format("woff2"),
     url("../assets/fonts/SFProDisplay-Semibold.woff") format("woff");
   font-family: "SF Pro Display";
@@ -10,8 +13,11 @@
 
 @font-face {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   src:
+    local("SF Pro Display Regular"),
+    local("SFProDisplay-Regular"),
+    local("SF Pro Regular"),
     url("../assets/fonts/SFProDisplay-Regular.woff2") format("woff2"),
     url("../assets/fonts/SFProDisplay-Regular.woff") format("woff");
   font-family: "SF Pro Display";
@@ -22,8 +28,36 @@
   font-style: normal;
   font-weight: 800;
   src:
+    local("SF Pro Display Heavy"),
+    local("SFProDisplay-Heavy"),
+    local("SF Pro Heavy"),
     url("../assets/fonts/SFProDisplay-Heavy.woff2") format("woff2"),
     url("../assets/fonts/SFProDisplay-Heavy.woff") format("woff");
   font-family: "SF Pro Display";
+  font-display: swap;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 200;
+  src:
+    local("SF Pro Display Ultralight"),
+    local("SFProDisplay-Ultralight"),
+    local("SF Pro Ultralight"),
+    url("../assets/fonts/SFProDisplay-Ultralight.woff2") format("woff2"),
+    url("../assets/fonts/SFProDisplay-Ultralight.woff") format("woff");
+  font-family: "SF Pro Display";
+  font-display: swap;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("Roboto Bold"),
+    local("Roboto-Bold"),
+    url("../assets/fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Roboto-Bold.woff") format("woff");
+  font-family: "Roboto";
   font-display: swap;
 }

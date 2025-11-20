@@ -4,6 +4,7 @@ body {
 
 * {
   box-sizing: border-box;
+  font-family: var(--font-body);
 }
 
 button {
@@ -43,6 +44,7 @@ button {
 button,
 a {
   outline: none;
+  cursor: pointer;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
 }

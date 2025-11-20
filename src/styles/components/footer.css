@@ -5,15 +5,34 @@ footer {
 .footer-links {
   display: flex;
   column-gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
+  font-weight: 200;
   font-size: 13px;
   line-height: 18px;
+
+  .lang-de & {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+
+.footer-li {
+  display: flex;
+  align-items: center;
 }
 
 .footer-link {
+  text-align: center;
   text-decoration: underline;
+  white-space: normal;
   opacity: 30.16%;
   transition: opacity 0.1s ease;
+
+  .lang-fr & {
+    width: min-content;
+  }
 
   &:active {
     opacity: 1;
@@ -22,7 +41,7 @@ footer {
 
 /* iPhone 8 */
 @media screen and (min-width: 375px) and (min-height: 667px) {
-  .footer-links {
+  body:not(.lang-es):not(.lang-ja):not(.lang-pt):not(.lang-de) .footer-links {
     column-gap: 52px;
   }
 }
@@ -31,5 +50,15 @@ footer {
 @media screen and (min-width: 390px) and (min-height: 844px) {
   footer {
     margin-top: 34px;
+  }
+
+  .lang-ja .footer-links,
+  .lang-pt .footer-links {
+    column-gap: 36px;
+  }
+
+  .lang-de .footer-links {
+    font-size: 12px;
+    line-height: 15px;
   }
 }

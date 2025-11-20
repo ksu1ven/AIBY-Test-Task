@@ -18,7 +18,6 @@ body {
 
 body {
   max-height: 100dvh;
-  overflow-y: auto;
   background-image: image-set(
     url("../assets/images/bg.png") 1x,
     url("../assets/images/bg-2x.png") 2x,
@@ -42,6 +41,16 @@ body {
   line-height: 46px;
   text-align: center;
   text-shadow: 0 0 48px rgba(var(--color-shadow-rgb), 0.83);
+
+  .lang-fr & {
+    font-size: 38px;
+    line-height: 42px;
+  }
+
+  .lang-pt & {
+    font-size: 40px;
+    line-height: 44px;
+  }
 }
 
 .close-btn {

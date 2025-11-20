@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="banner-wrapper">
-      <button type="button" class="close-btn">
+      <button type="button" class="close-btn" aria-label="Close banner">
         <svg
           width="24"
           height="24"
@@ -45,7 +45,7 @@
                     ./src/assets/images/advantages-1-2x.png 2x,
                     ./src/assets/images/advantages-1-3x.png 3x
                   "
-                  alt=""
+                  alt="Feature 1"
                   class="feature-card__image"
                 />
                 <p
@@ -62,7 +62,7 @@
                     ./src/assets/images/advantages-2-2x.png 2x,
                     ./src/assets/images/advantages-2-3x.png 3x
                   "
-                  alt=""
+                  alt="Feature 2"
                   class="feature-card__image"
                 />
                 <p
@@ -79,7 +79,7 @@
                     ./src/assets/images/advantages-3-2x.png 2x,
                     ./src/assets/images/advantages-3-3x.png 3x
                   "
-                  alt=""
+                  alt="Feature 3"
                   class="feature-card__image"
                 />
                 <p
@@ -99,14 +99,14 @@
                     <p
                       class="tariff__desc"
                       data-i18n="Just {{price}} per year"
-                      data-price="pricePerYear"
+                      data-price="$39.99"
                     ></p>
                   </div>
 
                   <p
                     class="tariff__price"
                     data-i18n="{{price}} <br>per week"
-                    data-price="pricePerWeekOptionYear"
+                    data-price="$0.48"
                   ></p>
 
                   <span class="tariff-badge">
@@ -156,7 +156,7 @@
                   <p
                     class="tariff__price"
                     data-i18n="{{price}} <br>per week"
-                    data-price="pricePerWeekOptionWeek"
+                    data-price="$6.99"
                   ></p>
                 </button>
               </li>
@@ -173,13 +173,13 @@
         <footer class="banner-footer">
           <nav>
             <ul class="footer-links">
-              <li>
+              <li class="footer-li">
                 <a href="#" class="footer-link" data-i18n="Terms of Use"></a>
               </li>
-              <li>
+              <li class="footer-li">
                 <a href="#" class="footer-link" data-i18n="Privacy Policy"></a>
               </li>
-              <li>
+              <li class="footer-li">
                 <a href="#" class="footer-link" data-i18n="Restore"></a>
               </li>
             </ul>

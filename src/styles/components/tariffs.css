@@ -7,7 +7,7 @@
 .tariff {
   display: flex;
   position: relative;
-  column-gap: 12px;
+  column-gap: 8px;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -36,13 +36,27 @@
   text-align: left;
   text-transform: uppercase;
   user-select: none;
+
+  .lang-fr .tariffs-list li:nth-child(2) &,
+  .lang-de .tariffs-list li:nth-child(2) &,
+  .lang-es .tariffs-list li:nth-child(2) & {
+    width: min-content;
+  }
 }
 
 .tariff__desc,
 .tariff__price {
   font-size: 14px;
   line-height: 17px;
+  text-align: left;
   opacity: 70%;
+}
+
+.tariff__desc {
+  .lang-fr & {
+    font-size: 13px;
+    line-height: 15px;
+  }
 }
 
 .tariff-badge {
@@ -52,7 +66,6 @@
   right: 24px;
   align-items: center;
   justify-content: center;
-  width: 119px;
   height: 20px;
   padding: 1.1px;
   border-radius: 16px;
@@ -90,6 +103,7 @@
   z-index: 2;
   width: 100%;
   height: 100%;
+  padding-inline: 21px;
   border-radius: 16px;
   background-image: linear-gradient(
     90deg,
@@ -98,7 +112,7 @@
   );
   font-weight: 700;
   font-size: 13px;
-  line-height: 16px;
+  line-height: 17px;
   font-family: var(--font-roboto);
   text-align: center;
   transition:
@@ -183,7 +197,7 @@
 
 /* iPhone 8 */
 @media screen and (min-width: 375px) and (min-height: 667px) {
-  .tariff {
+  body:not(.lang-es):not(.lang-fr):not(.lang-pt):not(.lang-de) .tariff {
     padding: 8px 56px 8px 24px;
   }
   .tariff__desc,
@@ -191,11 +205,26 @@
     font-size: 16px;
     line-height: 19px;
   }
+
+  .lang-es .tariffs-list li:nth-child(2) .tariff__title {
+    width: auto;
+  }
 }
 
 /* iPhone 12 */
 @media screen and (min-width: 390px) and (min-height: 844px) {
+  body:not(.lang-fr).tariff {
+    padding: 8px 56px 8px 24px;
+  }
+
   .tariffs__link {
     margin-top: 16px;
+  }
+
+  .tariff__desc {
+    .lang-fr & {
+      font-size: 14px;
+      line-height: 17px;
+    }
   }
 }
