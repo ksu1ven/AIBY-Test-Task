@@ -28,6 +28,14 @@ body {
   background-color: #090119;
 }
 
+[data-i18n] {
+  visibility: hidden;
+
+  &.visible{
+    visibility: visible;
+  }
+}
+
 /* iPhone 8 */
 @media screen and (max-width: 375.5px) and (max-height: 667.5px) {
   body {
