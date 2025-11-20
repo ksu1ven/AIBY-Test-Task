@@ -29,10 +29,10 @@ body {
 }
 
 [data-i18n] {
-  visibility: hidden;
+  color: transparent;
 
   &.visible{
-    visibility: visible;
+    color:unset;
   }
 }
 

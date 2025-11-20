@@ -192,6 +192,10 @@
   text-align: center;
   transition: background-color 0.1s ease;
 
+  &.visible{
+    color: var(--color-black);
+  }
+
   &:active {
     background-color: var(--color-white-hover);
   }
