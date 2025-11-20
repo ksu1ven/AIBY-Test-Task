@@ -32,6 +32,6 @@ export const fillPageContent = async () => {
       }
       el.innerHTML = text;
     }
-	 el.classList.add('visible');
+	 el.removeAttribute('style');
   });
 };
