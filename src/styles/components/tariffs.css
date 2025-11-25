@@ -17,6 +17,7 @@
   border-radius: 100px;
   backdrop-filter: blur(10.87px);
   background-color: rgba(var(--color-white-rgb), 0.16);
+  font-family: var(--font-pro-display);
   transition:
     background-color 0.1s ease,
     border-color 0.1s ease;
@@ -191,8 +192,6 @@
   line-height: 24px;
   text-align: center;
   transition: background-color 0.1s ease;
-
-
 
   &:active {
     background-color: var(--color-white-hover);

@@ -14,3 +14,18 @@
   padding-inline: 8px;
   padding-bottom: 8px;
 }
+
+/* iPhone 8 */
+@media screen and (min-width: 375px) and (min-height: 667px) {
+  .banner-wrapper {
+    padding-top: 37px;
+  }
+}
+
+/* iPhone 12 */
+@media screen and (min-width: 390px) and (min-height: 844px) {
+  .banner-wrapper {
+    padding-top: 64px;
+    padding-bottom: 30px;
+  }
+}

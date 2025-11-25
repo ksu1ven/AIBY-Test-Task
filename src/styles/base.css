@@ -3,7 +3,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  font-family: var(--font-body);
+  font-family: var(--font-pro);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,9 +19,9 @@ body {
 body {
   max-height: 100dvh;
   background-image: image-set(
-    url("../assets/images/bg.png") 1x,
-    url("../assets/images/bg-2x.png") 2x,
-    url("../assets/images/bg-3x.png") 3x
+    url("../assets/images/bg.webp") 1x,
+    url("../assets/images/bg-2x.webp") 2x,
+    url("../assets/images/bg-3x.webp") 3x
   );
   background-size: cover;
   background-repeat: no-repeat;
@@ -39,6 +39,7 @@ body {
   font-weight: 800;
   font-size: 42px;
   line-height: 46px;
+  font-family: var(--font-headings);
   text-align: center;
   text-shadow: 0 0 48px rgba(var(--color-shadow-rgb), 0.83);
 
