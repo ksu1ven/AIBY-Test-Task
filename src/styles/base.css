@@ -3,7 +3,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  font-family: var(--font-pro);
+  font-family: var(--font-body);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -39,7 +39,6 @@ body {
   font-weight: 800;
   font-size: 42px;
   line-height: 46px;
-  font-family: var(--font-headings);
   text-align: center;
   text-shadow: 0 0 48px rgba(var(--color-shadow-rgb), 0.83);
 

@@ -24,7 +24,6 @@ footer {
 }
 
 .footer-link {
-  font-family: var(--font-pro-display);
   text-align: center;
   text-decoration: underline;
   text-decoration-thickness: 0.1px;
